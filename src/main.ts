@@ -1,15 +1,13 @@
 import { Plugin } from "obsidian";
-import { registerQuizProcessor, resetQuizBlocksInNote } from "./quiz-processor";
+import { registerQuizProcessor, startNewAttempt } from "./quiz-processor";
 
 export default class ObsidiQuizPlugin extends Plugin {
     async onload() {
         registerQuizProcessor(this);
         this.addCommand({
-            id: "reset-quiz-block-attempts",
-            name: "Reset quiz block attempts in note",
-            editorCallback: () => resetQuizBlocksInNote(this.app),
+            id: "start-new-quiz-attempt",
+            name: "Start new quiz attempt in note",
+            editorCallback: () => { void startNewAttempt(this.app); },
         });
     }
-
-    onunload() {}
 }
