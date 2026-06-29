@@ -1,6 +1,6 @@
 {
-	"name": "quizblock",
-	"version": "1.0.0",
+	"name": "Simple Quizblock",
+	"version": "0.0.1",
 	"description": "A simple quiz block for Obsidian.",
 	"main": "main.js",
 	"type": "module",

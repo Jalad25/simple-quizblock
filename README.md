@@ -1,3 +1,6 @@
+> [!important]
+> Fork of quizblock by Oliver Cheng. See [LICENSE](LICENSE).
+
 # quizblock
 
 As the name implies: a simple quiz block format to help create interactive quizzes in your Obsidian notes. quizblock is intentionally lightweight and adds just two things:
@@ -209,3 +212,7 @@ I think that MCQs are quite a good way to test and learn content.
 Obsidian provides an extensible text platform and already provides integration with your notes (i.e. via Tasks). Therefore - what if plaintext was your canvas for MCQ questions, with a renderer in Obsidian? You can generate questions using whatever you want: the web interface of ChatGPT, Claude, Gemini, or your agentic tool of choice.
 
 Plus, this way you can share your questions with your friends! All they need is the source .md file and the quizblock plugin installed. Note that if you have attempted the quiz, your progress is saved in the file: you should first run the "Reset quiz block attempts in note" command to clear your progress.
+
+## Credits
+
+Originally created by [Oliver Cheng](https://github.com/olliecheng). This fork modifies how the code block is used in Obsidian for quizzing yourself, keeping the same logic for styling and interactive aspects of the original.
